@@ -1,0 +1,50 @@
+{
+  "project_info": {
+    "project_number": "716021830768",
+    "firebase_url": "https://gaming-application-b34ae.firebaseio.com",
+    "project_id": "gaming-application-b34ae",
+    "storage_bucket": "gaming-application-b34ae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:716021830768:android:ce5c32d9caff5429",
+        "android_client_info": {
+          "package_name": "com.example.babamalik.gamestoneww"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "716021830768-eptsuhfdqefvbs9tuip271lqrnk4nmct.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.babamalik.gamestoneww",
+            "certificate_hash": "297f4c6168038888c907cf37e2eab5910a91b172"
+          }
+        },
+        {
+          "client_id": "716021830768-6948uege0rhvfpsoad9uuiflan49nb3e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfJp3cKN18oGNjmv7Gl5wz24gH6HB3AU4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

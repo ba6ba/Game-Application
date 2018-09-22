@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#B25D75</color>
+    <color name="colorPrimaryDark">#662B37</color>
+    <color name="colorAccent">#EDE467</color>
+    <color name="white">#ffffff</color>
+    <color name="grey">#919191</color>
+    <color name="light_blue">#78DEFF</color>
+    <color name="blue">#366B7F</color>
+    <color name="splash_bg_color">#0f1a2d</color>
+    <color name="splash_bg_color_border">#A4C5FF</color>
+    <color name="XBOX_COLOR">#42c945</color>
+    <color name="PS_COLOR">#083b96</color>
+    <color name="BLACK">#000000</color>
+</resources>

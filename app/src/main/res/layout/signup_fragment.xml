@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/master_signup_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:theme="@style/Theme.Design.NoActionBar">
+
+
+    <LinearLayout
+        android:id="@+id/linearsignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:paddingTop="8dp">
+
+        <RelativeLayout
+            android:id="@+id/relativesignup"
+            android:layout_marginTop="130dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <View
+                android:id="@+id/bar_signup"
+                android:layout_width="100dp"
+                android:layout_height="4dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/splash_bg_color" />
+
+            <TextView
+                android:id="@+id/headingsignup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/bar_signup"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/titilliumwebregular"
+                android:text="JOIN US !!"
+                android:textAppearance="@style/TextAppearance.Shrine.Title"
+                android:textColor="@color/splash_bg_color"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/slogansignup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/headingsignup"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/titilliumwebextralight"
+                android:text="Experience the Best !"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
+                android:textColor="@color/splash_bg_color_border"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/userNameSignupLayout"
+            style="@style/Widget.Shrine.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/splash_bg_color"
+            android:hint="@string/gme_full_name">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/userNameSignupText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blue"
+                android:textColorHint="@color/splash_bg_color_border"
+                android:fontFamily="@font/titilliumwebextralight"
+                android:inputType="text"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/EmailSignupLayout"
+            style="@style/Widget.Shrine.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/splash_bg_color"
+
+            android:hint="@string/gme_hint_email">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/EmailSignupText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/blue"
+                android:fontFamily="@font/titilliumwebextralight"
+                android:textColorHint="@color/splash_bg_color_border"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/password_text_input_signup"
+            style="@style/Widget.Shrine.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/splash_bg_color"
+            android:fontFamily="@font/titilliumwebextralight"
+            android:hint="@string/gme_hint_password"
+            app:errorEnabled="true">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/password_edit_text_signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/titilliumwebextralight"
+                android:inputType="textPassword"
+                android:textColor="@color/blue"
+                android:textColorHint="@color/splash_bg_color_border" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/password_text_input_signup"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/BLACK"
+            android:fontFamily="@font/titilliumwebextralight"
+            android:text="Preferences"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/choice_xbox"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="@color/XBOX_COLOR"
+                android:text="XBOX"
+                android:gravity="center"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:fontFamily="@font/titilliumwebextralight"
+                android:shadowColor="@color/colorPrimaryDark"
+                android:padding="2dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:visibility="visible">
+
+            </android.support.v7.widget.AppCompatRadioButton>
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/choice_ps"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="@color/PS_COLOR"
+                android:text="PS"
+                android:gravity="center"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:fontFamily="@font/titilliumwebextralight"
+                android:shadowColor="@color/colorPrimaryDark"
+                android:padding="2dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:visibility="visible">
+
+            </android.support.v7.widget.AppCompatRadioButton>
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/choice_pc"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="@color/BLACK"
+                android:text="PC"
+                android:gravity="center"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:fontFamily="@font/titilliumwebextralight"
+                android:shadowColor="@color/colorPrimaryDark"
+                android:padding="2dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:visibility="visible">
+
+            </android.support.v7.widget.AppCompatRadioButton>
+
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/Signup_OK"
+                style="@style/Widget.Shrine.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/searchbutton"
+                android:text="@string/gme_button_login" />
+
+
+
+            <TextView
+                android:id="@+id/skip"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/Signup_OK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:elevation="0dp"
+                android:fontFamily="@font/titilliumwebextralight"
+                android:textColor="@color/splash_bg_color"
+                android:layout_centerInParent="true"
+                android:textSize="10sp"
+                android:text="SKIP" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

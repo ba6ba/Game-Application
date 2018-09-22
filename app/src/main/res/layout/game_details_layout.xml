@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/detailsLayout"
+    android:theme="@style/Theme.Design.NoActionBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/appBar"
+        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+        >
+
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/collapsingtoolBar"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll"
+            app:contentScrim="?attr/colorPrimary"
+            app:title="@string/app_name"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleMarginEnd="64dp"
+            android:background="@drawable/bg1"
+            >
+            
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:id="@+id/toolBar"
+                app:layout_collapseMode="pin"
+                android:theme="@style/ThemeOverlay.AppCompat.Light"
+                >
+
+
+            </android.support.v7.widget.Toolbar>
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/recycler1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="140dp">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/DetailsTitle"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="30dp"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--style="@style/setFont"-->
+            <!--android:text="GAME"-->
+            <!--android:textSize="22sp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/DetailsGenre"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/DetailsTitle"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--style="@style/setFont"-->
+            <!--android:text="DESC"-->
+            <!--android:textSize="16sp" />-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="2dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_below="@+id/DetailsGenre"-->
+            <!--android:background="@android:color/black" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/DetailsSummary"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="25dp"-->
+            <!--style="@style/setFont"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:text="SUMMARY"-->
+            <!--android:layout_below="@+id/DetailsGenre"-->
+            <!--android:textSize="12sp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/releaseDate"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="12dp"-->
+            <!--style="@style/setFont"-->
+
+            <!--android:text="RELEASE_DATE"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:layout_below="@+id/DetailsSummary"-->
+            <!--android:textSize="12sp" />-->
+
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/recycler2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_below="@+id/recycler1"-->
+        <!--android:layout_marginStart="140dp">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/Recommendationheading"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--style="@style/setFont"-->
+            <!--android:text="Recommendations"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:textSize="14sp" />-->
+
+        <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:layout_below="@+id/Recommendationheading"-->
+            <!--android:id="@+id/GamesrecyclerFeaturedView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginStart="10dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:layout_marginEnd="10dp"-->
+            <!--&gt;-->
+        <!--</android.support.v7.widget.RecyclerView>-->
+
+    <!--</RelativeLayout>-->
+
+</android.support.design.widget.CoordinatorLayout>

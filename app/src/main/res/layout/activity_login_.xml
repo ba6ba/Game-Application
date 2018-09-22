@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/master_login_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:theme="@style/Theme.Design.NoActionBar">
+
+    <LinearLayout
+        android:id="@+id/linearlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:paddingTop="10dp">
+
+        <RelativeLayout
+            android:id="@+id/relativelogin"
+            android:layout_marginTop="160dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <!--<ImageView-->
+                <!--android:id="@+id/image_logo_login"-->
+                <!--android:layout_width="132dp"-->
+                <!--android:layout_height="135dp"-->
+                <!--android:layout_alignParentStart="true"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:layout_marginTop="30dp"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:src="@drawable/logo1" />-->
+
+            <View
+                android:id="@+id/bar_login"
+                android:layout_width="100dp"
+                android:layout_height="4dp"
+                android:layout_below="@+id/image_logo_login"
+                android:layout_marginTop="15dp"
+                android:background="@color/splash_bg_color" />
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/bar_login"
+                android:layout_gravity="center_horizontal"
+                android:text="Welcome Back"
+                android:fontFamily="@font/titilliumwebregular"
+                android:textStyle="bold"
+                android:textColor="@color/splash_bg_color"
+                android:textAppearance="@style/TextAppearance.Shrine.Title" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="2dp"
+                android:layout_below="@+id/heading"
+                android:layout_gravity="center_horizontal"
+                android:text="Enjoy it Together !"
+                android:textStyle="bold"
+                android:fontFamily="@font/titilliumwebextralight"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/splash_bg_color_border"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2" />
+        </RelativeLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/Widget.Shrine.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/splash_bg_color"
+
+            android:hint="@string/gme_hint_username">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mailAddress_Login"
+                android:fontFamily="@font/titilliumwebextralight"
+                android:inputType="text"
+                android:textColor="@color/blue"
+                android:textColorHint="@color/splash_bg_color_border"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/password_text"
+            style="@style/Widget.Shrine.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/splash_bg_color"
+            android:fontFamily="@font/titilliumwebextralight"
+            android:hint="@string/gme_hint_password"
+            app:errorEnabled="true">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/mailAddress_Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blue"
+                android:fontFamily="@font/titilliumwebextralight"
+                android:textColorHint="@color/splash_bg_color_border"
+                android:inputType="textPassword" />
+        </android.support.design.widget.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/login_button"
+                style="@style/Widget.Shrine.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/searchbutton"
+                android:text="@string/gme_button_login" />
+
+
+            <Button
+                android:id="@+id/signup_button"
+                style="@style/Widget.Shrine.Button.Plain"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/login_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/searchbutton"
+                android:text="@string/gme_button_sup" />
+
+
+            <TextView
+                android:id="@+id/skip_button"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/signup_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:elevation="0dp"
+                android:fontFamily="@font/titilliumwebextralight"
+                android:textColor="@color/splash_bg_color"
+                android:layout_centerInParent="true"
+                android:textSize="16sp"
+                android:text="SKIP" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

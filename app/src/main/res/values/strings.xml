@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Gamesto</string>
+    <string name="title_game">Games</string>
+    <string name="title_cart">Order</string>
+    <string name="title_notifications">Join Us</string>
+    <string name="gme_hint_username">Mail Address</string>
+    <string name="gme_full_name">Full Name</string>
+    <string name="gme_hint_password">Password</string>
+    <string name="gme_button_login">Login</string>
+    <string name="gme_button_sup">Signup</string>
+    <string name="gme_hint_email">E-mail</string>
+</resources>
